@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RiskPulseAI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div>
+            <h1>RiskPulseAI</h1>
+            <p>Event-Driven Portfolio Stress Intelligence</p>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            System Operational
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="hero">
+            <div>
+                <h2>Portfolio Risk Dashboard</h2>
+                <p>
+                    Transforming financial news and social signals into
+                    actionable portfolio stress insights.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- SUMMARY CARDS -->
+
+        <section class="cards">
+
+            <div class="card">
+                <span class="card-label">Portfolio Value</span>
+                <h3 id="portfolio-value">$0</h3>
+                <p>Total portfolio exposure</p>
+            </div>
+
+            <div class="card danger">
+                <span class="card-label">Estimated Stress Loss</span>
+                <h3 id="stress-loss">$0</h3>
+                <p>Scenario-based loss estimate</p>
+            </div>
+
+            <div class="card">
+                <span class="card-label">Stressed Value</span>
+                <h3 id="stressed-value">$0</h3>
+                <p>Portfolio after stress scenario</p>
+            </div>
+
+            <div class="card warning">
+                <span class="card-label">Portfolio Loss</span>
+                <h3 id="loss-percent">0%</h3>
+                <p>Estimated portfolio decline</p>
+            </div>
+
+        </section>
+
+
+        <!-- RISK OVERVIEW -->
+
+        <section class="grid-two">
+
+            <div class="panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h2>Risk Overview</h2>
+                        <p>Signals detected across news and social media</p>
+                    </div>
+                </div>
+
+                <div class="risk-stat">
+                    <span>Critical</span>
+                    <div class="bar">
+                        <div id="critical-bar" class="fill critical"></div>
+                    </div>
+                    <strong id="critical-count">0</strong>
+                </div>
+
+                <div class="risk-stat">
+                    <span>High</span>
+                    <div class="bar">
+                        <div id="high-bar" class="fill high"></div>
+                    </div>
+                    <strong id="high-count">0</strong>
+                </div>
+
+                <div class="risk-stat">
+                    <span>Medium</span>
+                    <div class="bar">
+                        <div id="medium-bar" class="fill medium"></div>
+                    </div>
+                    <strong id="medium-count">0</strong>
+                </div>
+
+                <div class="risk-stat">
+                    <span>Low</span>
+                    <div class="bar">
+                        <div id="low-bar" class="fill low"></div>
+                    </div>
+                    <strong id="low-count">0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h2>Portfolio Exposure</h2>
+                        <p>Estimated loss by holding</p>
+                    </div>
+                </div>
+
+                <div id="exposure-container"></div>
+
+            </div>
+
+        </section>
+
+        <!-- TOP RISK DRIVERS -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+                <div>
+                    <h2>Top Risk Drivers</h2>
+                    <p>Companies with the highest portfolio stress exposure</p>
+                </div>
+            </div>
+
+            <div id="risk-drivers"></div>
+
+        </section>
+
+        <!-- RISK EXPLANATIONS -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+                <div>
+                    <h2>Risk Explanations</h2>
+                    <p>Highest-impact event detected for each company</p>
+                </div>
+            </div>
+
+            <div id="risk-explanations"></div>
+
+        </section>
+
+        <!-- STRESS TEST TABLE -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+                <div>
+                    <h2>Portfolio Stress Test</h2>
+                    <p>Company-level exposure under current risk scenario</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Asset</th>
+                            <th>Exposure</th>
+                            <th>Risk</th>
+                            <th>Shock</th>
+                            <th>Estimated Loss</th>
+                            <th>Stressed Value</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="stress-table"></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- RISK SIGNALS -->
+
+        <section class="panel">
+
+            <div class="panel-header">
+                <div>
+                    <h2>Detected Risk Signals</h2>
+                    <p>Financial news and social media intelligence</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Source</th>
+                            <th>Event</th>
+                            <th>Sentiment</th>
+                            <th>Impact</th>
+                            <th>Risk</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="signals-table"></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>RiskPulseAI • Strategic Event-Driven Portfolio Stress Testing</p>
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+
+</body>
+
+</html>

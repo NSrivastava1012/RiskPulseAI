@@ -1,0 +1,8 @@
+asset_id,company,asset_type,value,weight
+A001,Alpha Motors,Equity,2500000,0.2632
+A002,Beta Energy,Equity,1800000,0.1895
+A003,Gamma Tech,Equity,1500000,0.1579
+A004,Delta Bank,Corporate Bond,1200000,0.1263
+A005,Epsilon Pharma,Equity,1000000,0.1053
+A006,Delta Bank,Loan,800000,0.0842
+A007,Beta Energy,Corporate Bond,700000,0.0737

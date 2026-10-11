@@ -1,0 +1,8 @@
+asset_id,company,asset_type,value,weight,average_impact,maximum_impact,risk_events,risk_level,shock_rate,estimated_loss,stressed_value
+A001,Alpha Motors,Equity,2500000,0.2632,7.25,10,4,Critical,0.2,500000.0,2000000.0
+A002,Beta Energy,Equity,1800000,0.1895,6.5,8,4,High,0.1,180000.0,1620000.0
+A003,Gamma Tech,Equity,1500000,0.1579,5.5,7,4,High,0.1,150000.0,1350000.0
+A004,Delta Bank,Corporate Bond,1200000,0.1263,7.5,8,4,High,0.1,120000.0,1080000.0
+A005,Epsilon Pharma,Equity,1000000,0.1053,5.75,8,4,High,0.1,100000.0,900000.0
+A006,Delta Bank,Loan,800000,0.0842,7.5,8,4,High,0.1,80000.0,720000.0
+A007,Beta Energy,Corporate Bond,700000,0.0737,6.5,8,4,High,0.1,70000.0,630000.0
